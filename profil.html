@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>İSTEmezun</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/profil.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
+    crossorigin="anonymous">
+
+  <link rel="shortcut icon" href="img/isteicon.ico" type="image/x-icon">
+</head>
+
+<body class="mt-5 arkaplan">
+  <div class="container-fluid h-100">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top position-fixed">
+        <a href="#"><img src="img/iste_trans.png" width="50px"></a>
+        <a class="navbar-brand mx-2" href="anasayfa.html">İSTEmezun</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="anasayfa.html">Anasayfa <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profil.html">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="arkadaslar.html">Arkadaşlar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="isilanlari.html">İş İlanları</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <div class="input-group">
+              <input class="form-control" type="search" placeholder="Arama" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn text-light" style="background-color: #CF1F46" type="submit">Ara</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-4 col-lg-3 col-xl-2 pt-5 pt-sm-0">
+        <div class="sticky-top pt-5 pt-sm-0" style="top: 150px">
+          <div class="card golge mb-2">
+            <div class="fotoYukari">
+              <a href="#" data-toggle="modal" data-target="#openModalImg" data-target="#openModalImg" class="text-dark"><img
+                  class="img-profile golge mx-auto d-block" src="img/ilker.jpg"></a>
+            </div>
+            <div class="card-header bg-white p-1">
+              <br><br><br>
+              <h4 class="text-center">İlker Durmaz</h4>
+              <h4 class="text-center">Bilgisayar Mühendisi</h4>
+              <div class="d-flex justify-content-around ">
+                <a href="#"><i data-toggle="tooltip" title="Github" class="fab fa-github-square mb-1 iconGit" style="font-size: 42px;"></i></a>
+                <a href="#"><i data-toggle="tooltip" title="Linkedin" class="fab fa-linkedin  mb-1 iconLnk" style="font-size: 42px"></i></a>
+                <a href="#"><i data-toggle="tooltip" title="Facebook" class="fab fa-facebook-square mb-1 iconFb" style="font-size: 42px"></i></a>
+                <a href="#"><i data-toggle="tooltip" title="Twitter" class="fab fa-twitter-square mb-1 iconTw" style="font-size: 42px"></i></a>
+              </div>
+              <button type="button" class="btn btn-dark text-light btn-block dropdown-toggle" data-toggle="collapse"
+                data-target="#collapseID">Daha fazla...</button>
+            </div>
+            <div class="card-body collapse p-0" id="collapseID">
+              <div class="row">
+                <div class="col-3 mt-2">
+                  <p id="dahaFazlaIcon" data-toggle="tooltip" title="Konum" data-placement="top" class="text-center"><i
+                      class="fas fa-map-marker-alt" style="font-size: 25px"></i></p>
+                </div>
+                <div class="col-9 mt-2 pl-1">
+                  <h6>Adana</h6>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3 mt-2">
+                  <p id="dahaFazlaIcon" data-toggle="tooltip" title="Numara" data-placement="top" class="text-center"><i
+                      class="fas fa-mobile-alt" style="font-size: 25px"></i></p>
+                </div>
+                <div class="col-9 mt-2 pl-1">
+                  <h6>05559999999</h6>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3 mt-2">
+                  <p id="dahaFazlaIcon" data-toggle="tooltip" title="E-Mail" data-placement="top" class="text-center"><i
+                      class="fas fa-envelope" style="font-size: 25px"></i></p>
+                </div>
+                <div class="col-9 mt-2 pl-1">
+                  <h6 style="font-size: 14px">deneme@iste.edu.tr</h6>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3 mt-2">
+                  <p id="dahaFazlaIcon" data-toggle="tooltip" title="İş" data-placement="top" class="text-center"><i
+                      class="fas fa-briefcase" style="font-size: 25px"></i></p>
+                </div>
+                <div class="col-9 mt-2 pl-1">
+                  <h6>DenemeŞirket</h6>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-3 mt-2">
+                  <p id="dahaFazlaIcon" data-toggle="tooltip" title="Website" data-placement="top" class="text-center"><i
+                      class="fas fa-link" style="font-size: 25px"></i></p>
+                </div>
+                <div class="col-9 mt-2 pl-1">
+                  <a href="#" style="color: black">
+                    <h6 style="font-size: 14px">www.denemesite.com</h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-danger golge">
+
+            <div class="card-header text-center" style="font-weight: bold;font-size: 19px">
+              <a href="arkadaslar.html" target="_blank" class="isteColor">
+                <h6><strong>Tanıyor Olabileceğin Kişiler</strong></h6>
+              </a>
+            </div>
+
+            <div class="card-body p-1">
+              <div class="carousel vert slide " id="carouselEx" data-ride="carousel" data-interval="4000">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+
+                    <div class="list-group">
+
+                      <div class="list-group-item list-group-item-action align-items-start  mb-1 p-1">
+                        <div class="d-flex justify-content-between align-items-center"  data-toggle="tooltip" title="Bilgisayar Mühendisi">
+                          <img src="img/serkan.JPG" class="img-arkadas">
+                          <div class="flex-column mx-1">
+                            <a href="#" class="text-dark"><small><strong>Serkan BAŞDAĞ</strong></small></a>
+                          </div>
+                          <button class="btn btn-dark fa-pull-right btn-block golge w-25 h-25 mx-1" type="button"><i
+                              class="fas fa-user-plus"></i></button>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item list-group-item-action align-items-start  mb-1 p-1">
+                        <div class="d-flex justify-content-between align-items-center" data-toggle="tooltip" title="Bilgisayar Mühendisi">
+                          <img src="img/ilker.jpg" class="img-arkadas">
+                          <div class="flex-column  mx-1">
+                            <a href="#" class="text-dark"><small><strong>İlker DURMAZ</strong></small></a>
+                          </div>
+                          <button class="btn btn-dark fa-pull-right btn-block golge w-25 h-25 mx-1" type="button"><i
+                              class="fas fa-user-plus"></i></button>
+                        </div>
+                      </div>
+
+                      <div class="list-group-item list-group-item-action align-items-start  mb-1 p-1">
+                        <div class="d-flex justify-content-between align-items-center" data-toggle="tooltip" title="Makine Mühendisi">
+                          <img src="img/cenk.jpg" class="img-arkadas">
+                          <div class="flex-column mx-1">
+                            <a href="#" class="text-dark"><small><strong>Cenk AY</strong></small></a>
+                          </div>
+                          <button class="btn btn-dark fa-pull-right btn-block golge w-25 h-25 mx-1" type="button"><i
+                              class="fas fa-user-plus"></i></button>
+                        </div>
+                      </div>
+                      <div class="list-group-item list-group-item-action align-items-start  mb-1 p-1">
+                        <div class="d-flex justify-content-between align-items-center" data-toggle="tooltip" title="Bilgisayar Mühendisi">
+                          <img src="img/cagatay.jpg" class="img-arkadas">
+                          <div class="flex-column  mx-1">
+                            <a href="#" class="text-dark"><small><strong>Çağatay ÇINKIR</strong></small></a>
+                          </div>
+                          <button class="btn btn-dark fa-pull-right btn-block golge w-25 h-25 mx-1" type="button"><i
+                              class="fas fa-user-plus"></i></button>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="carousel-item ">
+
+                      <div class="list-group">
+  
+                        <div class="list-group-item list-group-item-action align-items-start  mb-1 p-1">
+                          <div class="d-flex justify-content-between align-items-center" data-toggle="tooltip" title="Bilgisayar Mühendisi">
+                            <img src="img/serkan.JPG" class="img-arkadas">
+                            <div class="flex-column  mx-1">
+                              <a href="#" class="text-dark"><small><strong>Serkan Başdağ</strong></small></a>
+                            </div>
+                            <button class="btn btn-dark fa-pull-right btn-block golge w-25 h-25 mx-1" type="button"><i
+                                class="fas fa-user-plus"></i></button>
+                          </div>
+                        </div>
+  
+                        <div class="list-group-item list-group-item-action align-items-start  mb-1 p-1">
+                          <div class="d-flex justify-content-between align-items-center" data-toggle="tooltip" title="Bilgisayar Mühendisi">
+                            <img src="img/ilker.jpg" class="img-arkadas">
+                            <div class="flex-column  mx-1">
+                              <a href="#" class="text-dark"><small><strong>İlker DURMAZ</strong></small></a>
+                            </div>
+                            <button class="btn btn-dark fa-pull-right btn-block golge w-25 h-25 mx-1" type="button"><i
+                                class="fas fa-user-plus"></i></button>
+                          </div>
+                        </div>
+
+                        <div class="list-group-item list-group-item-action align-items-start  mb-1 p-1">
+                          <div class="d-flex justify-content-between align-items-center" data-toggle="tooltip" title="Makine Mühendisi">
+                            <img src="img/cenk.jpg" class="img-arkadas">
+                            <div class="flex-column mx-1">
+                              <a href="#" class="text-dark"><small><strong>Cenk AY</strong></small></a>
+                            </div>
+                            <button class="btn btn-dark fa-pull-right btn-block golge w-25 h-25 mx-1" type="button"><i
+                                class="fas fa-user-plus"></i></button>
+                          </div>
+                        </div>
+  
+                        <div class="list-group-item list-group-item-action align-items-start  mb-1 p-1">
+                          <div class="d-flex justify-content-between align-items-center" data-toggle="tooltip" title="Bilgisayar Mühendisi">
+                            <img src="img/cagatay.jpg" class="img-arkadas">
+                            <div class="flex-column  mx-1">
+                              <a href="#" class="text-dark"><small><strong>Çağatay ÇINKIR</strong></small></a>
+                            </div>
+                            <button class="btn btn-dark fa-pull-right btn-block golge w-25 h-25 mx-1" type="button"><i
+                                class="fas fa-user-plus"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-8 col-lg-6 col-xl-7 mt-2 mt-sm-5">
+        <div class="card border-warning ">
+          <div class="card-header" style="font-weight: bold;font-size: 20px">Yetenekler</div>
+          <div class="card-body">
+            <blockquote class="blockquote"></blockquote>
+            <div class="accordion" id="accorID">
+              <div class="card ">
+                <div class="card-header" id="headerOne">
+                  <h5 class="mb-0">
+                    <button id="aciklamaTooltip" title="Ayrıntıları görmek için tıklayınız." type="button" class="btn btn-light"
+                      data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">JAVA</button>
+                  </h5>
+                </div>
+                <div class="collapse show" id="collapseOne" aria-labelledby="headerOne" data-parent="#accorID">
+                  <div class="card-body">Grails, Hibernate, JHipster, MyBatis, PrimeFaces</div>
+                </div>
+              </div>
+
+              <div class="card ">
+                <div class="card-header" id="headerTwo">
+                  <h5 class="mb-0">
+                    <button id="aciklamaTooltip" title="Ayrıntıları görmek için tıklayınız." type="button" class="btn btn-light"
+                      data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">PHP</button>
+                  </h5>
+                </div>
+                <div class="collapse" id="collapseTwo" aria-labelledby="headerTwo" data-parent="#accorID">
+                  </h5>
+                  <div class="card-body">PhalconPHP, Laravel, Symfony, Yii 2, CakePHP</div>
+                </div>
+              </div>
+
+              <div class="card ">
+                <div class="card-header" id="headerThree">
+                  <h5 class="mb-0">
+                    <button type="button" id="aciklamaTooltip" title="Ayrıntıları görmek için tıklayınız." class="btn btn-light"
+                      data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">JavaScirpt</button>
+                  </h5>
+                </div>
+                <div class="collapse" id="collapseThree" aria-labelledby="headerThree" data-parent="#accorID">
+                  <div class="card-body">React.js, Angular.js, Vue.js, Meteor.js</div>
+                </div>
+              </div>
+            </div>
+            </blockquote>
+          </div>
+          <button class="btn btn-warning dropdown-toggle" style="font-weight: bold" type="button" data-toggle="collapse2"
+            data-target="#collapseYetenekID">Devamını oku..</button>
+        </div>
+        <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="card border-danger mt-2 ">
+          <div class="card-header" style="font-weight: bold;font-size: 20px">Deneyim</div>
+          <div class="card-body">
+            <blockquote class="blockquote"></blockquote>
+
+
+            <div class="list-group">
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h4 class="mb-2">Öğrenci</h4>
+                  <!--<button type="button" class="close" aria-label="Kapat" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>-->
+                </div>
+                <div class="d-flex w-100 justify-content-start">
+                  <img class="card-img-top img-deneyim shadow-lg" src="img/iste.png" id="avatar" style="z-index: 2; box-shadow: red;">
+                  <div>
+                    <h5 class="mb-2 ml-3">İskenderun Teknik Üniversitesi (İSTE)</h5>
+                    <!--<button type="button" class="close" aria-label="Kapat" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>-->
+                    <small class="ml-3">Ağu 2015 – Şu Anda Çalışma Süresi: 3 yıl 6 ay Konum: Hatay</small>
+                  </div>
+                </div>
+              </div>
+
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h4 class="mb-2">Stajyer</h4>
+                  <!--<button type="button" class="close" aria-label="Kapat" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>-->
+                </div>
+                <div class="d-flex w-100 justify-content-start">
+                  <img class="card-img-top img-deneyim shadow-lg" src="img/ide.png" id="avatar" style="z-index: 2; box-shadow: red;">
+                  <div>
+                    <h5 class="mb-2 ml-3">IDECON DANIŞMANLIK HİZMETLERİ A.Ş.</h5>
+                    <!--<button type="button" class="close" aria-label="Kapat" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>-->
+                    <small class="ml-3">Haz 2018 – Şu Anda Çalışma Süresi: 8 ay Konum: Istanbul, Turkey</small>
+                  </div>
+                </div>
+
+              </div>
+              <div class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                  <h4 class="mb-2">Stajyer</h4>
+                  <!--<button type="button" class="close" aria-label="Kapat" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>-->
+                </div>
+                <div class="d-flex w-100 justify-content-start">
+                  <img class="card-img-top img-deneyim shadow-lg" src="img/tb.png" id="avatar" style="z-index: 2; box-shadow: red;">
+                  <div>
+                    <h5 class="mb-2 ml-3">TÜBİTAK BİLGEM</h5>
+                    <!--<button type="button" class="close" aria-label="Kapat" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>-->
+                    <small class="ml-3">Tem 2018 – Ağu 2018 Çalışma Süresi: 2 ay Konum: Ankara, Turkey</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-danger dropdown-toggle" style="font-weight: bold" type="button" data-toggle="collapse2"
+            data-target="#collapseID2">Devamını oku..</button>
+        </div>
+        <!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+        <div class="card border-dark mt-2 ">
+          <div class="card-header" style="font-weight: bold;font-size: 20px">Başarılar</div>
+          <div class="card-body">
+            <blockquote class="blockquote"></blockquote>
+
+            <div class="list-group">
+              <div class="list-group-item list-group-item-action flex-column align-items-start ">
+                <div class="d-flex w-100 justify-content-between">
+                  <h4 class="mb-2">Başarı Başlığı</h4>
+                  <!--<button type="button" class="close" aria-label="Kapat" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>-->
+                </div>
+                <p>Başarı içeriği.</p>
+              </div>
+
+              <div class="list-group-item list-group-item-action flex-column align-items-start my-0">
+                <div class="d-flex w-100 justify-content-between">
+                  <h4 class="mb-2">Başarı Başlığı</h4>
+                  <!--<button type="button" class="close" aria-label="Kapat" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>-->
+                </div>
+                <p>Başarı içeriği.</p>
+              </div>
+
+              <div class="list-group-item list-group-item-action flex-column align-items-start my-0">
+                <div class="d-flex w-100 justify-content-between">
+                  <h4 class="mb-2">Başarı Başlığı</h4>
+                  <!--<button type="button" class="close" aria-label="Kapat" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>-->
+                </div>
+                <p>Başarı içeriği.</p>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-dark dropdown-toggle" style="font-weight: bold" type="button" data-toggle="collapse2"
+            data-target="#collapseID2">Devamını oku..</button>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-3 mt-2 mt-sm-5">
+        <div class="sticky-top" style="top: 97px">
+          <div class="card border-danger golge">
+            <div class="card-header"><a href="anasayfa.html" class="isteColor">
+                <h5 class="text-center m-2" style="font-weight: bold">HABER MERKEZİ</h5>
+              </a></div>
+            <div class="card-body">
+              <div class="carousel vert slide" data-ride="carousel" data-interval="4000">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <ul class="timeline">
+                      <li>
+                        <!--"_blank" tıklanan linkin yeni sekmede açılmasını sağlar.-->
+                        <a target="_blank" href="#">Haber Başlığı 1</a>
+                        <a href="#" class="float-right">09 Ocak, 2019</a>
+                        <p class="article">>Haberler burada gözükecek..Haberler burada gözükecek..Haberler burada
+                          gözükecek..Haberler burada gözükecek..Haberler burada gözükecek..</p>
+                      </li>
+                      <hr>
+                      <li>
+                        <a href="#">Haber Başlığı 2</a>
+                        <a href="#" class="float-right">4 Temmuz, 2018</a>
+                        <p>Haberler burada gözükecek..Haberler burada gözükecek..Haberler burada gözükecek..Haberler
+                          burada gözükecek..Haberler burada gözükecek..Haberler burada gözükecek..Haberler burada
+                          gözükecek..</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="carousel-item">
+                    <ul class="timeline">
+                      <li>
+                        <a href="#">Haber Başlığı 4</a>
+                        <a href="#" class="float-right">09 Ocak, 2019</a>
+                        <p class="article">>Haberler burada gözükecek..Haberler burada gözükecek..Haberler burada
+                          gözükecek..Haberler burada gözükecek..Haberler burada gözükecek..</p>
+                      </li>
+                      <hr>
+                      <li>
+                        <a href="#">Haber Başlığı 5</a>
+                        <a href="#" class="float-right">4 Temmuz, 2018</a>
+                        <p>Haberler burada gözükecek..Haberler burada gözükecek..Haberler burada gözükecek..Haberler
+                          burada gözükecek..Haberler burada gözükecek..Haberler burada gözükecek..Haberler burada
+                          gözükecek..</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border-warning mt-2 golge">
+            <div class="container-fluid my-2">
+              <input class="form-control" id="FilterInputListID" type="text" placeholder="Arkadaş Ara..">
+              <br>
+              <ul class="list-scroll p-0" id="FilterList" style="height: 300px;">
+                <li class="list-group-item odd">Çağatay ÇINKIR<button data-whatever="Çağatay ÇINKIR" data-toggle="modal"
+                    data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item even">Serkan BAŞDAĞ<button data-whatever="Serkan BAŞDAĞ" data-toggle="modal"
+                    data-target="#openModalID" data-placement="top" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item odd">İlker DURMAZ<button data-whatever="İlker DURMAZ" data-toggle="modal"
+                    data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item even">Cenk AY<button data-whatever="Cenk AY" data-toggle="modal" data-target="#openModalID"
+                    type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item odd">Yakup KUTLU<button data-whatever="Yakup KUTLU" data-toggle="modal"
+                    data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item even">Sertan ALKAN<button data-whatever="Sertan ALKAN" data-toggle="modal"
+                    data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item odd">Yaşar DAŞDEMİR<button data-whatever="Yaşar DAŞDEMİR" data-toggle="modal"
+                    data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item even">Ahmet GÖKÇEN<button data-whatever="Ahmet GÖKÇEN" data-toggle="modal"
+                    data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item odd">Cenk AY<button data-whatever="Cenk AY" data-toggle="modal" data-target="#openModalID"
+                    type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item even">Yakup KUTLU<button data-whatever="Yakup KUTLU" data-toggle="modal"
+                    data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item odd">Sertan ALKAN<button data-whatever="Sertan ALKAN" data-toggle="modal"
+                    data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item even">Yaşar DAŞDEMİR<button data-whatever="Yaşar DAŞDEMİR" data-toggle="modal"
+                    data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item odd">Ahmet GÖKÇEN<button data-whatever="Ahmet GÖKÇEN" data-toggle="modal"
+                    data-target="#openModalID" data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="d-flex justify-content-center links my-1">
+      <div class="modal fade" tabindex="-1" role="dialog" id="openModalID" aria-labelledby="ModalTitle" aria="true"
+        data-backdrop="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="ModalTitle2">Mesaj Gönder</h3>
+              <button type="button" class="close times" data-dismiss="modal" aria-label="Kapatma işlemi">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="needs-validation">
+                <div class="form-group">
+                  <div class="input-group form-group">
+                    <div class="form-group">
+                      <label for="mesaj" style="font-weight: bold">Alıcı:</label>
+                      <input type="text" class="form-control" id="alici" placeholder="Alıcı" name="alici" disabled>
+
+                      <label for="mesaj" style="font-weight: bold">Mesaj:</label>
+                      <textarea type="text" class="form-control" rows="5" cols="60" id="comment" placeholder="Mesajınızı Griniz.."
+                        name="mesaj" required></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button id="mesajGonder" type="submit" class="btn btn-dark">Gönder</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Profil foto büyütme!-->
+    <div class="d-flex justify-content-center">
+      <div class="modal fade" tabindex="-1" id="openModalImg" data-backdrop="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-transparent border-0">
+            <img src="img/serkan.JPG" style="width:100%;" class="img rounded">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="popover"]').popover();
+      $('[data-toggle="tooltip"]').tooltip({
+        animation: true,
+        delay: { show: 250, hide: 250 },
+        trigger: "hover"
+      });
+      $('[data-toggle="collapse"]').tooltip({
+        animation: true,
+        delay: { show: 500, hide: 250 },
+        trigger: "hover"
+      });
+      $(document).ready(function () {
+        $('#FilterInputListID').on('keyup', function () {
+          var value = $(this).val().toLowerCase();
+          $('#FilterList li').filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+        });
+      });
+      $('#openModalID').on('show..bs.modal', function (event) {
+        var button = $(event.relatedTarget);
+        var alici = button.data('whatever');
+        var modal = $(this);
+        modal.find('.modal-body input').val(alici);
+      });
+    });
+
+  </script>
+</body>
+
+</html>

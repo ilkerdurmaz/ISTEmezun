@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>İSTEmezun</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/anasayfa.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h"
+    crossorigin="anonymous">
+
+  <link rel="shortcut icon" href="img/isteicon.ico" type="image/x-icon">
+</head>
+
+<body class="mt-5 arkaplan">
+  <div class="container-fluid h-100">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top position-fixed">
+        <a href="#"><img src="img/iste_trans.png" width="50px"></a>
+        <a class="navbar-brand mx-2" href="anasayfa.html">İSTEmezun</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="anasayfa.html">Anasayfa <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profil.html">Profil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="arkadaslar.html">Arkadaşlar</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="isilanlari.html">İş İlanları</a>
+                </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <div class="input-group">
+              <input class="form-control" type="search" placeholder="Arama" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn text-light" style="background-color: #CF1F46" type="submit">Ara</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-4 col-lg-3 col-xl-2 pt-5 pt-sm-0">
+        <div class="sticky-top pt-5 pt-sm-0" style="top: 150px">
+          <div class="card mb-2 golge">
+            <div class="fotoYukari">
+              <a href="#" data-toggle="modal"
+              data-target="#openModalProfil" class="text-dark"><img class="img-profile mx-auto d-block golge" src="img/iste1.png"></a>
+            </div>
+            <div class="card-header bg-white p-1">
+              <br><br><br>
+              <h4 class="text-center">İskenderun Teknik Üniversitesi
+              </h4>
+              <div class="d-flex justify-content-around ">
+                <a href="#"><i data-toggle="tooltip" title="Linkedin" class="fab fa-linkedin  mb-1 iconLnk" style="font-size: 42px"></i></a>
+                <a href="#"><i data-toggle="tooltip" title="Facebook" class="fab fa-facebook-square mb-1 iconFb" style="font-size: 42px"></i></a>
+                <a href="#"><i data-toggle="tooltip" title="Twitter" class="fab fa-twitter-square mb-1 iconTw" style="font-size: 42px"></i></a>
+                <a href="#"><i data-toggle="tooltip" title="Youtube" class="fab fa-youtube-square mb-1 iconYt" style="font-size: 42px;"></i></a>
+                <a href="#"><i data-toggle="tooltip" title="Google" class="fab fa-google-plus-square mb-1 iconGoogle" style="font-size: 42px;"></i></a>
+              </div>
+              <button type="button" class="btn btn-dark text-light btn-block dropdown-toggle" data-toggle="collapse"
+                data-target="#collapseID">Daha fazla...</button>
+            </div>
+ 
+            <div class="card-body collapse p-0" id="collapseID">
+                <div class="row">
+                  <div class="col-3 mt-2">
+                    <p id="dahaFazlaIcon" data-toggle="tooltip" title="Konum" data-placement="top" class="text-center"><i
+                        class="fas fa-map-marker-alt" style="font-size: 25px"></i></p>
+                  </div>
+                  <div class="col-9 mt-2 pl-0">
+                    <h6>İskenderun/Hatay</h6>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3 mt-2">
+                    <p id="dahaFazlaIcon" data-toggle="tooltip" title="Numara" data-placement="top" class="text-center"><i
+                        class="fas fa-mobile-alt" style="font-size: 25px"></i></p>
+                  </div>
+                  <div class="col-9 mt-2 pl-1">
+                    <h6>0 (326) 613 56 00
+                    </h6>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3 mt-2">
+                    <p id="dahaFazlaIcon" data-toggle="tooltip" title="Fax" data-placement="top" class="text-center"><i
+                        class="fas fa-fax" style="font-size: 25px"></i></p>
+                  </div>
+                  <div class="col-9 mt-2 pl-1">
+                    <h6>0 (326) 613 56 13
+                    </h6>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3 mt-2">
+                    <p id="dahaFazlaIcon" data-toggle="tooltip" title="E-Mail" data-placement="top" class="text-center"><i
+                        class="fas fa-envelope" style="font-size: 25px"></i></p>
+                  </div>
+                  <div class="col-9 mt-2 pl-1">
+                    <h6 style="font-size: 14px">webadmin@iste.edu.tr</h6>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-3 mt-2">
+                    <p id="dahaFazlaIcon" data-toggle="tooltip" title="Website" data-placement="top" class="text-center"><i
+                        class="fas fa-link" style="font-size: 25px"></i></p>
+                  </div>
+                  <div class="col-9 mt-2 pl-1">
+                    <a href="#" style="color: black">
+                      <h6>www.iste.edu.tr</h6>
+                    </a>
+                  </div>
+                </div>
+              </div>  
+          </div>
+                  
+        <div class="card border-danger sticky-top golge">
+            <div class="card-header isteColor text-center" style="font-weight: bold;font-size: 20px">ETKİNLİKLER</div>
+            <div class="card-body">
+        <div class="carousel slide" id="carouselEx" data-ride="carousel" data-interval="3000">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <a href="#" data-toggle="modal"
+                  data-target="#openModalE1" class="text-dark"><img class="d-block w-100" src="img/e1.jpg" ></a>     
+              </div>
+              <div class="carousel-item">
+                  <a href="#" data-toggle="modal"
+                  data-target="#openModalE2" class="text-dark"><img class="d-block w-100" src="img/e2.jpg"></a>      
+              </div>
+              <div class="carousel-item">
+                  <a href="#" data-toggle="modal"
+                  data-target="#openModalE3" class="text-dark"><img class="d-block w-100" src="img/e3.jpg"></a>  
+              </div>
+              <div class="carousel-item">
+                  <a href="#" data-toggle="modal"
+                  data-target="#openModalE4" class="text-dark"><img class="d-block w-100" src="img/e4.jpg"></a>  
+              </div>
+              <div class="carousel-item">
+                  <a href="#" data-toggle="modal"
+                  data-target="#openModalE5" class="text-dark"><img class="d-block w-100" src="img/e5.jpg"></a>  
+              </div>
+          </div>
+              <a class="carousel-control-prev" href="#carouselEx" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">geri</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselEx" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">ileri</span>
+              </a>
+            </div>
+      </div>
+    </div>
+        </div>
+        
+      </div>
+      
+      <div class="col-12 col-sm-8 col-lg-6 col-xl-7 mt-2 mt-sm-5">
+
+        <div class="card border-dark">
+          <div class="card-header text-center isteColor" style="font-weight: bold;font-size: 20px">HABER MERKEZİ</div>
+          <div class="card-body">
+            <blockquote class="blockquote"></blockquote>
+
+            <div class="list-group">
+              <div class="list-group-item list-group-item-action flex-column align-items-start my-2">
+                <div class="d-flex w-100 justify-content-between">
+                  <h4 class="mb-2">HABER Başlığı 1</h4>
+                  <!--<button type="button" class="close" aria-label="Kapat" data-dismiss="alert"><span aria-hidden="true">&times;</span></button>-->
+                </div>
+                <p>Haberin açıklaması burada olacak.</p>
+              </div>
+
+              <div class="list-group-item list-group-item-action flex-column align-items-start my-2">
+                <div class="d-flex w-100 justify-content-between">
+                  <h4 class="mb-2">HABER Başlığı 2</h4>
+                </div>
+                <p>Haberin açıklaması burada olacak.</p>
+              </div>
+
+              <div class="list-group-item list-group-item-action flex-column align-items-start my-2">
+                <div class="d-flex w-100 justify-content-between">
+                  <h4 class="mb-2">HABER Başlığı 3</h4>
+                </div>
+                <p>Haberin açıklaması burada olacak.</p>
+              </div>
+              
+                <div class="list-group-item list-group-item-action flex-column align-items-start my-2">
+                <div class="d-flex w-100 justify-content-between">
+                  <h4 class="mb-2">HABER Başlığı 4</h4>
+                </div>
+                <p>Haberin açıklaması burada olacak.</p>
+              </div>
+                <div class="list-group-item list-group-item-action flex-column align-items-start my-2">
+                <div class="d-flex w-100 justify-content-between">
+                  <h4 class="mb-2">HABER Başlığı 5</h4>
+                </div>
+                <p>Haberin açıklaması burada olacak.</p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="card-footer">
+              <nav>
+                <!--justify-content-center/end diyerek konumu değiştirebiliriz.-->
+                    <ul class="pagination pagination-lg justify-content-center m-0">
+                        <li class="page-item disabled"><a href="#" class="page-link" tabindex="-1">&laquo;</a></li>
+                        <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item"><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">&raquo;</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+      </div>
+      
+      <div class="col-md-12 col-lg-3 mt-2 mt-sm-5">
+        <div class="sticky-top" style="top: 97px">
+          <div class="card border-danger golge">
+            <div class="card-header"><a href="isilanlari.html" class="isteColor" target="_blank" ><h5 class="text-center m-2" style="font-weight: bold">İŞ İLANLARI</h5></a></div>
+            <div class="card-body p-2">
+              <div class="carousel vert" data-ride="carousel" data-interval="3000">
+                <div class="carousel-inner">
+                    
+                  <div class="carousel-item active">
+                    <div class="list-group">
+
+                      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start mb-1">
+                        
+                        <div class="d-flex w-100 justify-content-between">
+                          <h6 class="mb-1">İş İlanı Başlığı</h6>
+                          <small>3 gün önce</small>
+                        </div>
+                        <img src="img/ide.png" class="img-is">
+                        <small>İşveren İsmi</small>
+                      </a>
+
+                      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start mb-1">
+                        
+                          <div class="d-flex w-100 justify-content-between">
+                            <h6 class="mb-1">İş İlanı Başlığı</h6>
+                            <small>4 gün önce</small>
+                          </div>
+                          <img src="img/ide.png" class="img-is">
+                          <small>İşveren İsmi</small>
+                        </a>
+
+                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start mb-1">
+                        
+                            <div class="d-flex w-100 justify-content-between">
+                              <h6 class="mb-1">İş İlanı Başlığı</h6>
+                              <small>5 gün önce</small>
+                            </div>
+                            <img src="img/ide.png" class="img-is">
+                            <small>İşveren İsmi</small>
+                          </a>
+
+                      
+                    </div>
+                    </div>
+                   
+            </div>
+          </div>
+          </div>
+        </div>
+          <div class="card border-warning mt-2 golge">
+            <div class="container-fluid my-2 ">
+              <input class="form-control" id="FilterInputListID" type="text" placeholder="Arkadaş Ara..">
+              <br>
+              <ul class="list-scroll p-0" id="FilterList">
+                  <li class="list-group-item odd">Çağatay ÇINKIR<button data-whatever="Çağatay ÇINKIR" data-toggle="modal"
+                    data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item even">Serkan BAŞDAĞ(TheRose)<button data-whatever="Serkan BAŞDAĞ" data-toggle="modal"
+                    data-target="#openModalID" data-placement="top" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item odd">İlker DURMAZ<button data-whatever="İlker DURMAZ" data-toggle="modal"
+                    data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item even">Cenk AY<button data-whatever="Cenk AY" data-toggle="modal" data-target="#openModalID"
+                    type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item odd">Yakup KUTLU<button data-whatever="Yakup KUTLU" data-toggle="modal"
+                    data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item even">Sertan ALKAN<button data-whatever="Sertan ALKAN" data-toggle="modal"
+                    data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item odd">Yaşar DAŞDEMİR<button data-whatever="Yaşar DAŞDEMİR" data-toggle="modal"
+                    data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item even">Ahmet GÖKÇEN<button data-whatever="Ahmet GÖKÇEN" data-toggle="modal"
+                    data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item odd">Cenk AY<button data-whatever="Cenk AY" data-toggle="modal" data-target="#openModalID"
+                    type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item even">Yakup KUTLU<button data-whatever="Yakup KUTLU" data-toggle="modal"
+                    data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item odd">Sertan ALKAN<button data-whatever="Sertan ALKAN" data-toggle="modal"
+                    data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item even">Yaşar DAŞDEMİR<button data-whatever="Yaşar DAŞDEMİR" data-toggle="modal"
+                    data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+                <li class="list-group-item odd">Ahmet GÖKÇEN<button data-whatever="Ahmet GÖKÇEN" data-toggle="modal"
+                    data-target="#openModalID" data-target="#openModalID" type="button" class="mesaj"><i class="fas fa-envelope"></i></button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="d-flex justify-content-center links my-1">
+      <div class="modal fade" tabindex="-1" role="dialog" id="openModalID" aria-labelledby="ModalTitle" aria="true"
+        data-backdrop="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="ModalTitle2">Mesaj Gönder</h3>
+              <button type="button" class="close times" data-dismiss="modal" aria-label="Kapatma işlemi">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="needs-validation">
+                <div class="form-group">
+                  <div class="input-group form-group">
+                    <div class="form-group">
+                      <label for="mesaj" style="font-weight: bold">Alıcı:</label>
+                      <input type="text" class="form-control" id="alici" placeholder="Alıcı" name="alici" disabled>
+
+                      <label for="mesaj" style="font-weight: bold">Mesaj:</label>
+                      <textarea type="text" class="form-control" rows="5" cols="60" id="comment" placeholder="Mesajınızı Griniz.."
+                        name="mesaj" required></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button id="mesajGonder" type="submit" class="btn btn-dark">Gönder</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Profil foto büyütme!-->
+    <div class="d-flex justify-content-center">
+      <div class="modal fade" tabindex="-1"  id="openModalProfil" data-backdrop="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-transparent border-0">
+                  <img src="img/iste1.png" style="width:100%;" class="img rounded">     
+          </div>
+        </div>
+      </div>
+    </div>
+<!--Etkinlik foto büyütme!-->
+    <div class="d-flex justify-content-center">
+        <div class="modal fade" tabindex="-1"  id="openModalE1" data-backdrop="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                    <img src="img/e1.jpg" style="width:100%;" class="img rounded">     
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+          <div class="modal fade" tabindex="-1"  id="openModalE2" data-backdrop="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content bg-transparent border-0">
+                      <img src="img/e2.jpg" style="width:100%;" class="img rounded">     
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="modal fade" tabindex="-1"  id="openModalE3" data-backdrop="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-transparent border-0">
+                        <img src="img/e3.jpg" style="width:100%;" class="img rounded">     
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+              <div class="modal fade" tabindex="-1"  id="openModalE4" data-backdrop="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content bg-transparent border-0">
+                          <img src="img/e4.jpg" style="width:100%;" class="img rounded">     
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="modal fade" tabindex="-1"  id="openModalE5" data-backdrop="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bg-transparent border-0">
+                            <img src="img/e5.jpg" style="width:100%;" class="img rounded">     
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="popover"]').popover();
+      $('[data-toggle="tooltip"]').tooltip({
+        animation: true,
+        delay: { show: 150, hide: 250 },
+        trigger: "hover"
+      });
+      $('[data-toggle="collapse"]').tooltip({
+        animation: true,
+        delay: { show: 500, hide: 250 },
+        trigger: "hover"
+      });
+      $(document).ready(function () {
+        $('#FilterInputListID').on('keyup', function () {
+          var value = $(this).val().toLowerCase();
+          $('#FilterList li').filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+        });
+      });
+      $('#openModalID').on('show..bs.modal', function (event) {
+        var button = $(event.relatedTarget);
+        var alici = button.data('whatever');
+        var modal = $(this);
+        modal.find('.modal-body input').val(alici);
+      });
+    });
+      
+  </script>
+</body>
+
+</html>
